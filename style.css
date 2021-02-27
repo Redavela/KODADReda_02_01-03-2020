@@ -23,4 +23,11 @@ nav {
 .item-nav {
   display: inline-block;
   line-height: 70px;
+  font-size: 25px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.item-nav a {
+  text-decoration: none;
 }
