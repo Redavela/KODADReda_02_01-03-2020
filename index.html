@@ -5,20 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c118e041c0.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <!-- création de la nav barre -->
-    <div class="wrapper">
-        <h1><img src="images/logo/Reservia.svg" alt="logo"></h1>
+    <!-- Etape 1 : création de la nav barre -->
+    <nav>
+        <!-- Logo -->
+        <div class="Reservia">
+            <h1><img src="images/logo/Reservia.svg" alt="logo"></h1>
+        </div>
+        <ul>
+          <li> 
+            <!-- liens 1 -->
+            <a class="lien1" href="#Hébergement"> Hébergements 
+            </a>
+          </li>
+          <li>
+            <!-- liens 2 -->
+            <a class="lien2" href="#Activités">
+                  Activités 
+            </a>
+          </li>
+          <li>
+            <!-- liens 3 -->
+            <button class="lien3" href="#"> 
+                S'inscrire 
+            </button>
+          </li>
+        </ul>
+    </nav>
+    <!-- Etape 2 : Le titre  la barre de recherche -->
+    <h2> <strong> Trouvez votre hébergement pour des vacances de rêve</strong></h2><br>
+    <p>En plein centre ville ou en pleine nature</p>
+    <br>
+    <div class="Recherche" >
+       <div class="logo">
+        <i class="fas fa-map-marker-alt"></i>      
+       </div>   
+       <input type="text" id="recherche" placeholder=" Marseille,France">
+       <button class="btn" href="#">Rechercher</button>
+    </div> <br>
+    <!-- Etape 3 : Les filtres et l'onglet info -->
+    <div class="filtre">
+        <span>Filtres</span>
+        <div class="F">
+                <i class="fas fa-money-bill-wave"></i>
+            Économique
+        </div>
+        <div class="F">
+                <i class="fas fa-child"></i>
+            Familial
+        </div>
+        <div class="F">
+                <i class="fas fa-heart"></i>
+            Romantique
+        </div>
+        <div class="F">
+                <i class="fas fa-dog"></i>
+            Animaux autorisés
+        </div>
+    </div> <br>
+    <div class="info">
+        <i class="fas fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
-        <nav>
-            <ul class="liste-nav">
-                <li> <a href="#Hebergement"class="item-nav">Hébergement</a> </li>
-                <li> <a href="#Activite" class="item-nav">Activité</a> </li>
-                <li><a href="#"class="item-nav">S'inscrire</a></li>
-            </ul>
-        </nav>
 </body>
 </html>
