@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c118e041c0.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Reservia</title>
 </head>
 <body>
     <!-- Etape 1 : création de la nav barre -->
@@ -50,7 +50,7 @@
     </div><br>
     <!-- Etape 3 : Les filtres et l'onglet info -->
     <div class="filtre">
-        <span>Filtres</span>
+        <span class="titre_span">Filtres</span>
         <div class="F">
                 <i class="fas fa-money-bill-wave"></i>
                 <span class="filtre_nom" >Économique</span>
@@ -75,9 +75,11 @@
     <!-- Etape 4: La Section Hebergement  -->
     <section id="Hébergement">
         <article class="carte_h">
-            <h2>Hébergements à Marseille</h2>
+         <h2>Hébergements à Marseille</h2>
+          <a href="#" class="lien_carte">
             <div class="carte">
                 <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image chambre la cannebiere">
+                <div class="caracteristique_h">
                 <h3>Auberge La Cannebiere</h3>
                 <p>Nuit à partir de <strong>25€</strong></p>
                 <div class="classement">
@@ -97,9 +99,13 @@
                         <i class="fas fa-star"></i>
                     </div>
                 </div>
+                </div>
             </div>
+         </a>
+         <a href="#" class="lien_carte">
             <div class="carte">
                 <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Image chambre Hotel du port">
+                <div class="caracteristique_h">
                 <h3>Hôtel du port</h3>
                 <p>Nuit à partir de 52€</p>
                 <div class="classement">
@@ -120,8 +126,12 @@
                     </div>
                 </div>
             </div>
+            </div>
+         </a>
+         <a href="#" class="lien_carte">
             <div class="carte">
                 <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Image chambre Hôtel les mouettes">
+                <div class="caracteristique_h">
                 <h3>Hôtel les mouettes</h3>
                 <p>Nuit à partir de 76€</p>
                 <div class="classement">
@@ -141,9 +151,13 @@
                         <i class="fas fa-star"></i>
                     </div>
                 </div>
+                </div>
             </div>
+         </a>   
+         <a href="#" class="lien_carte">
             <div class="carte">
                 <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image chambre Hotel de la mer">
+                <div class="caracteristique_h">
                 <h3>Hôtel de la mer</h3>
                 <p>Nuit à partir de 46€</p>
                 <div class="classement">
@@ -163,9 +177,13 @@
                         <i class="fas fa-star"></i>
                     </div>
                 </div>
+                </div>
             </div>
+         </a>
+         <a href="#" class="lien_carte">
             <div class="carte">
                 <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Image chambre auberge le panier">
+                <div class="caracteristique_h">
                 <h3>Auberge Le Panier</h3>
                 <p>Nuit à partir de <strong>23€</strong></p>
                 <div class="classement">
@@ -185,9 +203,13 @@
                         <i class="fas fa-star"></i>
                     </div>
                 </div>
+             </div>
             </div>
+         </a>
+         <a href="#" class="lien_carte">
             <div class="carte">
                 <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Image hotel chez Amina">
+                <div class="caracteristique_h">
                 <h3>Hôtel chez Amina</h3>
                 <p>Nuit à partir de 96€</p>
                 <div class="classement">
@@ -207,7 +229,9 @@
                         <i class="fas fa-star"></i>
                     </div>
                 </div>
+               </div>
             </div>
+         </a>
             <span><strong>Afficher plus</strong></span>
         </article>
         <aside class="Les_plus" >
@@ -215,6 +239,7 @@
                 <h2>Les plus populaires</h2>
                 <i class="fas fa-chart-line"></i>
             </header>
+            <a href="#" class="lien_plus">
             <div class="carte_plus">
                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image hotel le soleil du matin">
                 <div class="caracteristique">
@@ -239,6 +264,8 @@
                 </div>
             </div>
             </div>
+        </a>
+            <a href="#" class="lien_plus">
             <div class="carte_plus">
                 <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image chambre 'Au coeur de l'eau'">
                 <div class="caracteristique">
@@ -264,6 +291,8 @@
                 </div>
             </div>
             </div>
+        </a>
+            <a href="#" class="lien_plus">
             <div class="carte_plus">
                 <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image hotel tout bleu et blanc">
                 <div class="caracteristique">
@@ -287,36 +316,49 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
+    </a>
         </aside>
     </section>
     <!-- Etape 5 section Activité -->
     <h2 class="Titre">Activités à Marseille</h2>
     <section id="Activité">
-        <div class="grande_image">
+     <div class="grande_image">
+            <a href="#" class="lien_act">
             <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image du vieux port">
                 <p class="Nom">Vieux Port</p>
+            </a>
         </div>
-        <div class="moyenne_image">
+     <div class="moyenne_image">
+            <a href="#" class="lien_act">
             <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image du fort de pomègues">
             <p class="Nom"> Fort de Pomègues</p>
+        </a>
         </div>
-        <div class="mini_image">
+     <div class="mini_image">
+            <a href="#" class="lien_act">
             <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image des îles du frioul">
                 <p class="Nom">îles du Frioul</p>
+            </a>
         </div>
-        <div class="grande_image">
+     <div class="grande_image">
+            <a href="#" class="lien_act">
             <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image du parc nationale des calanques">
                 <p class="Nom">Parc Nationale des Calanques</p>
+            </a>
         </div>
-        <div class="petite_image">
+     <div class="petite_image">
+            <a href="#" class="lien_act">
             <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image Notre-Dame-de-la-Garde">
                 <p class="Nom">Notre-Dame-de-la-Garde</p>
+            </a>
         </div>
-        <div class="petite_image">
+     <div class="petite_image">
+            <a href="#" class="lien_act">
             <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image du parc longchamp">
             <p class="Nom">Parc Longchamp</p>
-        </div>
+        </a>
+     </div>
     </section>
     <!-- Etape 6 Le Footer -->
     <footer>

@@ -32,20 +32,21 @@ ul{
 
 li{
   list-style-type: none;
-  font-size: 2vh;
+  font-size: 17px;
   height: 120px;
 }
 
-a{
+ul li a{
 display: flex;
 align-self: baseline;
 }
 
-a:hover {
+ul li a:hover {
   color: #0065FC;
   border-top: 2px solid #0065FC;
 }
 a:focus {
+  text-decoration: none;
   outline: none;
 }
 
@@ -63,7 +64,7 @@ a:focus {
   cursor: pointer;
   color: #0065FC;
   font-weight: bold;
-  margin-right: 10px;
+  margin-top: 3px;
   font-size: 17px
 }
 .lien3:focus {
@@ -177,7 +178,7 @@ span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   line-height: 15px;
 }
 .info .fas {
@@ -205,10 +206,10 @@ margin: auto;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap-reverse;
 }
 #Hébergement .carte_h {
-  width: 65%;
+  width: 68%;
   height: 650px;
   background-color: #F2F2F2;
   border-radius: 25px;
@@ -218,7 +219,7 @@ margin: auto;
   flex-wrap: wrap;
 }
 #Hébergement .Les_plus {
-  width: 30%;
+  width: 29%;
   height: 650px;
   background-color: #F2F2F2;
   border-radius: 25px
@@ -236,12 +237,15 @@ margin: auto;
   top: 2px;
 }
 
-#Hébergement .carte_h .carte {
+#Hébergement .carte_h .lien_carte {
   background-color: white;
-  width: 27%;
+  width: 280px;
   height: 35%;
   border-radius: 25px;
+  text-decoration: none;
+  color: black;
 }
+
 #Hébergement .carte_h span {
   width: 100%;
   position: relative;
@@ -250,20 +254,27 @@ margin: auto;
   text-align: left;
 }
 #Hébergement .carte_h .carte img {
-  height: 60%;
+  display: flex;
+  height: 130px;
   width: 95%;
+  object-fit: cover;
   border-radius: 20px 20px 0 0;
-  display: block;
   margin: 7px auto;
 }
 #Hébergement .carte_h .classement {
   width: 100%;
   display: flex;
   padding: 4px 0 5px 15px ;
+  font-size: small;
+}
+#Hébergement .carte_h .caracteristique_h{
+  display: flex;
+  flex-direction: column;
 }
 #Hébergement h3{
   padding: 4px 0 0 15px;
   font-weight: bold;
+  font-size: 20px;
 }
 #Hébergement p{
   padding: 4px 0 0 15px;
@@ -281,46 +292,56 @@ margin: auto;
 }
 .Les_plus header {
   display: flex;
-  width: 90%;
+  width: 94%;
   justify-content: space-between;
-  margin: auto;
+  margin:  auto 0;
   padding-top: 10px;
   margin-bottom: 0;
 }
 .Les_plus header .fas{
   display: flex;
-  align-items: center;
-  font-size: 30px;
+  margin-top: 6px;
+  margin-left: 40px;
+  font-size: 22px;
 }
 .Les_plus .carte_plus {
   background-color: white;
-  height: 24%;
-  width: 80%;
   display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+}
+.Les_plus .lien_plus {
+  background-color: white;
+  height: 160px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
   margin: auto;
   border-radius: 20px;
+  text-decoration: none;
+  color: black;
 }
 .carte_plus img {
   width: 40%;
-  height: 90%;
+  height: 145px;
   border-radius: 20px 0 0 20px ;
+  object-fit: cover;
   display: flex;
   justify-content: flex-start;
   margin: auto;
-  margin-left: 8px
+  margin-left: 5px;
 }
 .carte_plus .caracteristique {
-  width: 60%;
-  height: 100%;
-  margin-top: 5px;
-  align-content: center;
-  justify-content: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ margin-bottom: 20px;
 }
 .carte_plus .classement {
   width: 100%;
   display: flex;
-  align-self: flex-end;
-  padding: 50px 15px;
+  margin-left: 15px;
+  font-size: small
 }
 /* Etape 5 */
 #Activité {
@@ -335,7 +356,7 @@ margin: auto;
 }
 #Activité .grande_image {
   height: 90%;
-  width: 20%;
+  width: 340px;
   background-color: white;
   border-radius: 25px;
   box-shadow: 0 10px 10px #f2f2f2;
@@ -344,17 +365,15 @@ margin: auto;
 }
 #Activité .moyenne_image {
   height: 45%;
-  width: 20%;
+  width: 340px;
   background-color: white;
   border-radius: 25px;
   box-shadow: 0 10px 15px #f2f2f2;
   border: 1px solid #f2f2f2;
-  overflow: hidden;
-  background-size: cover;
 }
 #Activité .petite_image {
   height: 40%;
-  width: 20%;
+  width: 340px;
   background-color: white;
   border-radius: 25px;
   box-shadow: 0 10px 15px #f2f2f2;
@@ -362,7 +381,7 @@ margin: auto;
 }
 #Activité .mini_image {
   height: 35%;
-  width: 20%;
+  width: 340px;
   background-color: white;
   border-radius: 25px;
   box-shadow: 0 25px 25px #f2f2f2;
@@ -383,6 +402,7 @@ margin: auto;
 #Activité .moyenne_image img {
   height: 78%;
   width: 100%;
+  object-fit: cover;
   background-size: cover;
   border-radius: 25px 25px 0 0;
 }
@@ -395,6 +415,10 @@ margin: auto;
   width: 100%;
   height: 74%;
   border-radius: 25px 25px 0 0;
+}
+#Activité .lien_act {
+  text-decoration: none;
+  color: black;
 }
 /* Etape 6 */
 footer {
@@ -421,9 +445,9 @@ footer div p {
 /* Partie Responsive */
 @media screen and (max-width:768px) {
   nav {
-    height: 40px;
+    height: 50px;
     width: 100%;
-    margin: 10px 5px;
+    margin: 10px 5px 50px 5px;
 
   }
 
@@ -444,16 +468,17 @@ footer div p {
     flex-direction: column;
     text-align: center;
     padding: 0;
-    margin-bottom: 10px;
+    height: 30px;
+    margin: 20px 0;
     border-bottom:2px solid #f2f2f2 ;
-    font-size: 20px;
+    font-size: 14px;
   }
   .lien3{
     position: absolute;
     top: 28px;
     right:1px;
   }
-  a:hover {
+  ul li a:hover {
     color: #0065FC;
     border-bottom: 2px solid #0065FC;
     border-top: none;
@@ -461,14 +486,58 @@ footer div p {
   .Titre{
     font-weight: 900;
     text-align: center;
-    padding-top: 20px;
-    margin-bottom: 0;
-    font-size: 28px;
+    padding-top: 40px;
+    margin-bottom: 4px;
+    font-size: 20px;
     display: block;
     flex-direction: column;
   }
   .Titre1{
     display: block;
     text-align: center;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  .Recherche{
+    display: flex;
+    justify-content: center;
+  }
+  .filtre {
+    flex-wrap: wrap;
+    height: 200px;
+    margin-left: 18px;
+    font-weight: bold;
+    display: flex;
+    align-content: center;
+  }
+  .titre_span{
+    width: 100%;
+    text-align: left;
+  }
+  .filtre .F {
+    border:solid 3px #f2f2f2;
+    margin: 5px 0px 5px 18px;
+    display: flex;
+    justify-content: center;
+  }
+  .filtre_nom{
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  .filtre .fas{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin-left: -2px;
+  }
+  .info{
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .info span{
+    text-align: left;
+    font-size: 14px;
   }
 }
