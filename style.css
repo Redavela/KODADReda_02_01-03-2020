@@ -83,10 +83,11 @@ a:focus {
 }
 .Recherche {
   width: 95% ;
-  margin: 2px auto;
+  margin: 6px auto;
   display: flex;
   justify-content: flex-start;
   height: 38px;
+  z-index: 1;
 }
 .Recherche .logo {
 background-color: #f2f2f2;
@@ -95,6 +96,7 @@ height: auto;
 width: 40px;
 cursor: pointer;
 position: relative;
+z-index: 1;
 }
 .Recherche .logo .fas {
 position: relative;
@@ -103,9 +105,12 @@ left: 50%;
 transform: translate(-50%,-50%);
 }
 .Recherche #recherche {
-  border-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-top: solid #f2f2f2;
+  border-bottom: solid #f2f2f2;
   border-radius: 0;
-  border-color: #f2f2f2 transparent;
+  z-index: 1;
 }
 input:focus::placeholder {
   color: transparent;
@@ -122,13 +127,25 @@ input::placeholder {
   border-radius: 0 15px 15px 0;
   color: #f2f2f2;
   cursor: pointer;
+  z-index: 1;
+}
+.Recherche .btn2{
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: white;
+  color: white;
+  text-decoration: none;
+  border-style: none;
+  z-index: 0;
+  position: absolute;
 }
 .btn:focus {
   outline: none;
 }
 .filtre {
   width: 95% ;
-  margin: 2px auto;
+  margin: 6px auto;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -174,7 +191,8 @@ span {
 }
 .info {
   width: 95% ;
-  margin: 2px auto;
+  margin: 20px auto;
+  margin-bottom: 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -210,7 +228,7 @@ margin: auto;
 }
 #Hébergement .carte_h {
   width: 68%;
-  height: 650px;
+  height: 680px;
   background-color: #F2F2F2;
   border-radius: 25px;
   display: flex;
@@ -220,7 +238,7 @@ margin: auto;
 }
 #Hébergement .Les_plus {
   width: 29%;
-  height: 650px;
+  height: 680px;
   background-color: #F2F2F2;
   border-radius: 25px
 }
@@ -344,6 +362,11 @@ margin: auto;
   font-size: small
 }
 /* Etape 5 */
+.Titre2 {
+  display:flex;
+  margin-left: 25px;
+  margin-top: 30px;
+}
 #Activité {
   height: 600px;
   width: 98vw ;
@@ -580,7 +603,7 @@ footer div p {
     height: 30px;
     margin: 20px 0;
     border-bottom:2px solid #f2f2f2 ;
-    font-size: 14px;
+    font-size: 16px;
   }
   .lien3{
     position: absolute;
@@ -611,6 +634,7 @@ footer div p {
     display: flex;
     justify-content: center;
   }
+  
   .filtre {
     flex-wrap: wrap;
     height: 200px;
@@ -650,12 +674,133 @@ footer div p {
     font-size: 14px;
   }
 }
+@media screen and (max-width:426px){
+  .Recherche .btn2{
+    width: 38px;
+    height: 39px;
+    border-radius: 10px;
+    background-color: #0065FC;
+    color: white;
+    text-decoration: none;
+    border-style: none;
+    z-index: 2;
+    position: absolute;
+    right: 23%; 
+    cursor: pointer;
+  }
+  .Recherche .btn{
+    cursor: default;
+    background-color: white;
+    color: white;
+    width: 38px;
+  }
+}
 @media screen and (max-width:320px){
 
-  
-
-
-
-
-
+  .Recherche .btn2{
+    width: 38px;
+    height: 39px;
+    border-radius: 10px;
+    background-color: #0065FC;
+    color: white;
+    text-decoration: none;
+    border-style: none;
+    z-index: 2;
+    position: absolute;
+    right: 16%; 
+    cursor: pointer;
+  }
+  .Recherche .btn{
+    cursor: default;
+    background-color: white;
+    color: white;
+    width: 38px;
+  }
+  #Hébergement{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 2400px;
+  }
+  #Hébergement .Les_plus {
+    width: 100%;
+    border-radius: 0;
+  }
+  #Hébergement header {
+    position: relative;
+    width: 100%;
+    top: -10px;
+    left: -15px;
+    margin: 0;
+    font-size: 14px;
+    align-content: space-between;
+  }
+  #Hébergement .lien_plus {
+    margin: 10px auto;
+    width: 300px;
+  }
+  #Hébergement .lien_plus .carte_plus .caracteristique{
+    height: 90%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  #Hébergement .caracteristique h3{
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  #Hébergement .caracteristique p{
+    margin: 0 0 40px 0;
+    font-size: 14px;
+    padding-top: 0;
+  }
+  #Hébergement .classement{
+    margin-bottom: 6px;
+    font-size: 12px;
+  }
+  #Hébergement .carte_h h2 {
+    display: block;
+    position: relative;
+    margin:0;
+    padding: 0;
+    left: 10px;
+    font-size: 20px;
+  }
+  #Hébergement span {
+    margin-right: 0px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  #Hébergement .carte_h{
+    width: 99%;
+  }
+  #Hébergement .caracteristique_h h3{
+    padding-top: 0;
+    font-size: 17px;
+  }
+  #Hébergement .caracteristique_h p{
+    font-size: 14px;
+  }
+  #Activité{
+    height: 1300px;
+  }
+  #Activité .grande_image{
+    width: 92%;
+  }
+  #Activité .moyenne_image{
+    width: 92%;
+  }
+  #Activité .petite_image{
+    width: 92%;
+  }
+  #Activité .mini_image{
+    width: 95%;
+  }
+  footer div {
+    display: flex;
+    align-items: flex-start ;
+    text-align: start;
+  }
 }
