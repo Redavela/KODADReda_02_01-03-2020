@@ -674,7 +674,8 @@ footer div p {
     font-size: 14px;
   }
 }
-@media screen and (max-width:426px){
+@media screen and (max-width:430px){
+  
   .Recherche .btn2{
     width: 38px;
     height: 39px;
@@ -686,28 +687,6 @@ footer div p {
     z-index: 2;
     position: absolute;
     right: 23%; 
-    cursor: pointer;
-  }
-  .Recherche .btn{
-    cursor: default;
-    background-color: white;
-    color: white;
-    width: 38px;
-  }
-}
-@media screen and (max-width:320px){
-
-  .Recherche .btn2{
-    width: 38px;
-    height: 39px;
-    border-radius: 10px;
-    background-color: #0065FC;
-    color: white;
-    text-decoration: none;
-    border-style: none;
-    z-index: 2;
-    position: absolute;
-    right: 16%; 
     cursor: pointer;
   }
   .Recherche .btn{
@@ -802,5 +781,26 @@ footer div p {
     display: flex;
     align-items: flex-start ;
     text-align: start;
+  }
+}
+@media screen and (max-width:320px){
+  .Recherche .btn2{
+    width: 38px;
+    height: 39px;
+    border-radius: 10px;
+    background-color: #0065FC;
+    color: white;
+    text-decoration: none;
+    border-style: none;
+    z-index: 2;
+    position: absolute;
+    right: 16%; 
+    cursor: pointer;
+  }
+  .Recherche .btn{
+    cursor: default;
+    background-color: white;
+    color: white;
+    width: 38px;
   }
 }
