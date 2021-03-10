@@ -86,7 +86,7 @@ a:focus {
   margin: 6px auto;
   display: flex;
   justify-content: flex-start;
-  height: 38px;
+  height: 37px;
   z-index: 1;
 }
 .Recherche .logo {
@@ -110,6 +110,7 @@ transform: translate(-50%,-50%);
   border-top: solid #f2f2f2;
   border-bottom: solid #f2f2f2;
   border-radius: 0;
+  width: 250px;
   z-index: 1;
 }
 input:focus::placeholder {
@@ -177,8 +178,8 @@ input::placeholder {
   align-items: center;
   color: #0065FC;
   background-color: #DEEBFF;
-  height: 40px;
-  width: 40px;
+  height: 38px;
+  width: 38px;
   border-radius: 999px;
 }
 .filtre .F .fas::before{
@@ -205,14 +206,16 @@ span {
   align-items: center;
   background-color: white;
   color: #0065FC;
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
   border: 2px solid #f2f2f2;
   border-radius: 999px;
+  flex-shrink: 0;
 }
 .info .fas::before {
 display: flex;
 margin: auto;
+flex-shrink: 0;
 }
 .info span {
   margin-left: 10px;
@@ -608,7 +611,8 @@ footer div p {
   .lien3{
     position: absolute;
     top: 28px;
-    right:1px;
+    right: 1px;
+    margin-right: 2px;
   }
   ul li a:hover {
     color: #0065FC;
@@ -649,7 +653,7 @@ footer div p {
   }
   .filtre .F {
     border:solid 3px #f2f2f2;
-    margin: 5px 0px 5px 18px;
+    margin: 5px 0px 5px 20px;
     display: flex;
     justify-content: center;
   }
@@ -658,10 +662,11 @@ footer div p {
     margin-left: 0;
   }
   .filtre .fas{
-    height: 50px;
-    width: 50px;
+    height: 48px;
+    width: 100%;
     display: inline-block;
     margin-left: -2px;
+
   }
   .info{
     height: 50px;
@@ -671,23 +676,28 @@ footer div p {
   }
   .info span{
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width:430px){
   
+  .Recherche {
+    margin-left: 30px;
+  }
   .Recherche .btn2{
-    width: 38px;
     height: 39px;
+    width: 39px;
     border-radius: 10px;
     background-color: #0065FC;
     color: white;
     text-decoration: none;
     border-style: none;
     z-index: 2;
-    position: absolute;
-    right: 23%; 
     cursor: pointer;
+    position: relative;
+    right: 50px;
+    bottom: 1px;
+    flex-shrink: 0;
   }
   .Recherche .btn{
     cursor: default;
@@ -784,17 +794,16 @@ footer div p {
   }
 }
 @media screen and (max-width:320px){
+  .Recherche #Recherche{
+    width: 230px;
+  }
   .Recherche .btn2{
-    width: 38px;
-    height: 39px;
     border-radius: 10px;
     background-color: #0065FC;
     color: white;
     text-decoration: none;
     border-style: none;
     z-index: 2;
-    position: absolute;
-    right: 16%; 
     cursor: pointer;
   }
   .Recherche .btn{
