@@ -275,6 +275,9 @@ flex-shrink: 0;
   bottom: 18px;
   text-align: left;
 }
+#Hébergement .carte_h h6:hover{
+  cursor: pointer;
+}
 #Hébergement .carte_h .carte img {
   display: flex;
   height: 130px;
@@ -473,8 +476,14 @@ footer div{
 footer div h3 {
   line-height: 2;
 }
+footer div h3:hover {
+  cursor: pointer;
+}
 footer div p {
   line-height: 2;
+}
+footer div p:hover {
+  cursor: pointer;
 }
 /* Partie Responsive */
 @media screen and (max-width:1250px) {
