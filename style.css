@@ -31,11 +31,10 @@ ul{
 }
 
 li{
-  justify-content: flex-end,space-between;
   list-style-type: none;
   font-size: 17px;
   height: 120px;
-  width: 210px;
+  width: 200px;
 }
 
 ul li a{
@@ -53,6 +52,7 @@ a:focus {
 }
 
 .lien1, .lien2 {
+  justify-content: space-between;
   text-decoration: none;
   justify-content: center;
   color: black;
