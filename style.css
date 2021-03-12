@@ -31,9 +31,11 @@ ul{
 }
 
 li{
+  justify-content: flex-end,space-between;
   list-style-type: none;
   font-size: 17px;
   height: 120px;
+  width: 210px;
 }
 
 ul li a{
@@ -52,6 +54,7 @@ a:focus {
 
 .lien1, .lien2 {
   text-decoration: none;
+  justify-content: center;
   color: black;
   padding: 51px;
   font-weight: normal;
@@ -65,6 +68,7 @@ a:focus {
   color: #0065FC;
   font-weight: bold;
   margin-top: 3px;
+  margin-left: 2px;
   font-size: 17px
 }
 .lien3:focus {
