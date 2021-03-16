@@ -32,7 +32,7 @@ ul{
 
 li{
   list-style-type: none;
-  font-size: 17px;
+  font-size: 16px;
   height: 120px;
   width: 200px;
 }
@@ -523,7 +523,7 @@ footer div p:hover {
     margin: auto;
   }
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1120px){
   #Hébergement {
     display: flex;
     flex-wrap: wrap-reverse;
