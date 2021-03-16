@@ -250,9 +250,9 @@ flex-shrink: 0;
   border-radius: 25px
 }
 #Hébergement .carte_h h2 {
-  width: 100%;
+  width: 95%;
   position: relative; 
-  left: 30px;
+  left: 14px;
   top: 15px;
 }
 #Hébergement .Les_plus h2 {
@@ -272,10 +272,10 @@ flex-shrink: 0;
 }
 
 #Hébergement .carte_h h6 {
-  width: 100%;
+  width: 95%;
   position: relative;
   font-size: 18px;
-  left:30px;
+  left:14px;
   bottom: 18px;
   text-align: left;
 }
