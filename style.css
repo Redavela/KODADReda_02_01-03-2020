@@ -52,7 +52,7 @@ a:focus {
 }
 
 .lien1, .lien2 {
-  justify-content: space-between;
+  justify-content: center;
   text-decoration: none;
   color: black;
   padding: 51px;
@@ -67,9 +67,8 @@ a:focus {
   color: #0065FC;
   font-weight: bold;
   margin-top: 3px;
-  margin-left: 2px;
+  margin-left: 40px;
   font-size: 17px;
-  width:200px;
 }
 .lien3:focus {
   outline: none;
