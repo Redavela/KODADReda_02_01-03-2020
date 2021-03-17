@@ -54,7 +54,6 @@ a:focus {
 .lien1, .lien2 {
   justify-content: space-between;
   text-decoration: none;
-  justify-content: center;
   color: black;
   padding: 51px;
   font-weight: normal;
@@ -69,7 +68,8 @@ a:focus {
   font-weight: bold;
   margin-top: 3px;
   margin-left: 2px;
-  font-size: 17px
+  font-size: 17px;
+  width:200px;
 }
 .lien3:focus {
   outline: none;
@@ -631,6 +631,7 @@ footer div p:hover {
     position: absolute;
     top: 18px;
     right: 10px;
+    width: auto;
   }
   ul li a:hover {
     color: #0065FC;
